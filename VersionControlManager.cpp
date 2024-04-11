@@ -74,3 +74,5 @@ void VersionControlManager::printConfigurationsByState(bool isFixed) {
     }
 }
 
+
+

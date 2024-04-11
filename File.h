@@ -1,27 +1,16 @@
 #ifndef FILE_H
 #define FILE_H
 
-#include <string>
-#include <vector>
-#include "FileVersion.h"
+#include "Item.h"
+#include <stdexcept>
 
-class File {
-private:
-    std::string name;
-    std::vector<FileVersion> versions;
-
+class File : public Item {
 public:
     File(const std::string& filename);
-
-    void addVersion(const FileVersion& version);
-
-    std::string getName() const;
-    void printAllVersions() const;
-
-    std::vector<FileVersion> getVersionsByDate(const std::string& date) const;
     FileVersion getVersionByNumber(int num) const;
     std::vector<FileVersion> getFixedVersions() const;
-    std::vector<FileVersion> getVersionsByState(bool isFixed) const; // Добавленный метод
+    std::vector<FileVersion> getVersionsByState(bool isFixed) const;
+    std::vector<FileVersion> getVersionsByDate(const std::string& date) const;
 };
 
 #endif // FILE_H

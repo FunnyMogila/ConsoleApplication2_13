@@ -21,3 +21,4 @@ void FileVersion::fixVersion() {
 void FileVersion::editVersion() {
     isFixed = false;
 }
+
