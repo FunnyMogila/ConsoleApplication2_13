@@ -129,14 +129,14 @@
   <ItemGroup>
     <ClCompile Include="File.cpp" />
     <ClCompile Include="FileVersion.cpp" />
-    <ClCompile Include="item.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="VersionControlManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="File.h" />
     <ClInclude Include="FileVersion.h" />
-    <ClInclude Include="item.h" />
+    <ClInclude Include="Item.h" />
     <ClInclude Include="VersionControlManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
